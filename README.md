@@ -34,11 +34,15 @@ The following datasets are used for evaluation in this challenge:
 ## Steps
 1. Download the source and target datasets  (miniImageNet, EuroSAT, ISIC2018, Plant Disease, ChestX-Ray8) using the above links.
 2. Change configuration file ./configs.py to reflect the correct paths to each dataset. Please see the existing example paths for information on which subfolders these paths should point to.
-3. Train base models on miniImageNet
+3. Change current directory to ./scripts
+   ```shell
+   cd ./scripts
+   ```
+4. Train base models on miniImageNet
    ```shell
    python train.py --is_train True --transductive True --flip True --drop True --n_query 15 -n_shot 5 --n_train_class 15 --gpu 0 
    ```
-4. Finetune & Test  
+5. Finetune & Test  
    - *Finetune & Test without Data Augmentation*
    ```shell
    python train.py --is_train False --transductive True --flip True --drop True --n_test_query 15 --n_shot 5 --n_test_class 5 --gpu 0 --test_data ISIC
@@ -47,7 +51,7 @@ The following datasets are used for evaluation in this challenge:
    ```shell
    python train.py --is_train False --transductive True --flip True --drop True --n_test_query 15 --n_shot 5 --n_test_class 5 --gpu 0 --test_data ISIC --test_aug 10
    ```
-5. If you want to train and test your own methods, you should knoe the means of the following arguments:  
+6. If you want to train and test your own methods, you should knoe the means of the following arguments:  
    - *test_data: name of the corresponding dataset (EuroSAT, ISIC, CropDiseases, ChestX)*  
    - *n_train_class: number of way for training episode*  
    - *n_test_class: number of way for test episode*  
