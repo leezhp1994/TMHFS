@@ -36,11 +36,11 @@ The following datasets are used for evaluation in this challenge:
 python train.py --is_train True --transductive True --flip True --drop True --n_shot 5 --n_train_class 15 --gpu 0 
 ```
 4. Finetune & Test  
-   *Finetune & Test without Data Augmentation*
-```shell
-python train.py --is_train False --transductive True --flip True --drop True --n_shot 5 --n_train_class 15 --gpu 0 --   test_data ISIC
-```
-   *Finetune & Test with Data Augmentation*  
-```shell
-python train.py --is_train False --transductive True --flip True --drop True --n_shot 5 --n_train_class 15 --gpu 0 --test_data ISIC --test_aug 10
-```
+   - *Finetune & Test without Data Augmentation*
+   ```shell
+   python train.py --is_train False --transductive True --flip True --drop True --n_shot 5 --n_train_class 15 --gpu 0 --   test_data ISIC
+   ```
+   - *Finetune & Test with Data Augmentation*  
+   ```shell
+   python train.py --is_train False --transductive True --flip True --drop True --n_shot 5 --n_train_class 15 --gpu 0 --test_data ISIC --test_aug 10
+   ```
