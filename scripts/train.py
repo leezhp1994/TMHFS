@@ -141,7 +141,7 @@ if __name__ == '__main__':
     print('Evaluating the best {}-shot model for {}...'.format(n_shot,args.test_data))
     test_data = args.test_data
     aug_num = max(args.test_aug,1)
-    print('aug_num:',args.test_data)
+    print('aug_num:',args.test_aug)
     if 'cropdiseases' in test_data.lower():
         save_name = 'CropDiseases'
         test_path = configs.CropDisease_path
