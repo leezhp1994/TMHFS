@@ -56,7 +56,7 @@ if __name__ == '__main__':
                         help='Choice backbone such as ConvNet-64, ConvNet-128, ConvNet-256 and ResNet-12.')
     parser.add_argument('--test_data', type=str, default='ISIC',
                         help='Name of test dataset.')
-    parser.add_argument('--test_aug', type=int, default=1,
+    parser.add_argument('--test_aug', type=int, default=0,
                         help='Number of data augmentation methods.')
 
     args = parser.parse_args()
