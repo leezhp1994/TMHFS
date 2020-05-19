@@ -40,7 +40,7 @@ The following datasets are used for evaluation in this challenge:
    ```
 4. Train base models on miniImageNet
    ```shell
-   python train.py --is_train True --transductive True --flip True --drop True --n_query 15 -n_shot 5 --n_train_class 15 --gpu 0 
+   python train.py --is_train True --transductive True --flip True --drop True --n_query 15 --n_shot 5 --n_train_class 15 --gpu 0 
    ```
 5. Finetune & Test  
    - *Finetune & Test without Data Augmentation*
