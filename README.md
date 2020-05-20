@@ -51,6 +51,7 @@ The following datasets are used for evaluation in this challenge:
    ```shell
    python train.py --is_train False --transductive True --flip True --drop True --n_test_query 15 --n_shot 5 --n_test_class 5 --gpu 0 --test_data ISIC --test_aug 10
    ```
+   The result of our method **TMHFS+DA** is 72.13% using the model [miniImageNet_ResNet1](https://github.com/leezhp1994/TMHFS/blob/master/scripts/save/baseline_default000/miniImageNet_ResNet12) in ./scripts/save/baseline_default000/
 6. If you want to train and test your own methods, you should knoe the means of the following arguments:  
    - *test_data: name of the corresponding dataset (EuroSAT, ISIC, CropDiseases, ChestX)*  
    - *n_train_class: number of way for training episode*  
