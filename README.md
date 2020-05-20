@@ -58,7 +58,7 @@ The following datasets are used for evaluation in this challenge:
    - *n_query: number of queries per class in train*  
    - *n_test_query: number of queries per class in test*  
    - *n_shot: number of support set per class*
-   - *test_aug: number of data augmentation methods, default 1 means no data augmentation*
+   - *test_aug: number of data augmentation methods, default 0 means no data augmentation*
    
 ## Acknowledgments
 This code is based on the implementation of [MCT_DFMN](https://github.com/seongmin-kye/MCT_DFMN "MCT_DFMN").
